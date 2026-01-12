@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>채팅방(폴링)</h3>
+            <p>실시간 업데이트(새로고침 있음) - 불편</p>
+        </div>
+        <div class="chat-box" id="chatBox">
+                <!-- 반복 시작 -->
+            <div class="msg-wrap">
+                <div class="msg-box">
+                    <span class="name">홍길동</span>
+                    <span class="msg">반가워</span>
+                </div>
+            </div>
+            <div class="msg-wrap">
+                <div class="msg-box">
+                    <span class="name">정은혜</span>
+                    <span class="msg">반가워</span>
+                </div>
+            </div>
+                <!-- 반복 종료  -->
+        </div>
+        <form action="/chat/list" method="post" class="input-area">
+            <input type="text" name="sender" value="익명" class="input-sender" required>
+            <input type="text" name="mesage" placeholder="내용 입력..." class="input-msg" autofocus>
+            <button type="submit" class="btn-send"></button>
+
+        </form>
+    </div>
+</body>
+</html>
